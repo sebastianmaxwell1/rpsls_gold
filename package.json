@@ -1,0 +1,24 @@
+{
+  "name": "rpsls_node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "AI.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "game.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sebastianmaxwell1/rpsls_gold.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sebastianmaxwell1/rpsls_gold/issues"
+  },
+  "homepage": "https://github.com/sebastianmaxwell1/rpsls_gold#readme",
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  }
+}
