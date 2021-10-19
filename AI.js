@@ -2,12 +2,12 @@
 
 
 class AI{
-    constructor(rpslsChoice) {
-        this.rpslsChoice = rpslsChoice;
+    constructor(aiChoice) {
+        this.aiChoice = aiChoice;
     }
 
     generateRandomMove() {
-        let randomChoice = Math.floor(Math.random() * this.rpslsChoice) + 1;
+        let randomChoice = Math.floor(Math.random() * this.aiChoice) + 1;
         return randomChoice;
     }
 }
