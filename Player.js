@@ -5,7 +5,7 @@ class Player {
         this.score = 0;
         this.name = name;
         this.gesture = "";
-        this.gestureList = ['Rock', 'Paper', 'Scissors', 'lizard', 'spock'];
+        this.possibleGesture = ['Rock', 'Paper', 'Scissors', 'lizard', 'spock'];
 
         
     }

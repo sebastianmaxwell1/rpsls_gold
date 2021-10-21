@@ -7,7 +7,7 @@ class AI extends Player{
     }
 
     gestureSelector() {
-        this.gesture =  this.gestureList[Math.floor(Math.random() * this.gestureList.length)];
+        this.gesture =  this.possibleGesture[Math.floor(Math.random() * this.possibleGesture.length)];
     }
 }
 

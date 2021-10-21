@@ -2,10 +2,13 @@
   "name": "rpsls_node",
   "version": "1.0.0",
   "description": "",
-  "main": "AI.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "Game.js"
+    "start": "Game.js",
+    "start": "Player.js",
+    "start": "AI.js",
+    "start": "Human.js"
   },
   "repository": {
     "type": "git",
