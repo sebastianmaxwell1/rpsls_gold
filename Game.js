@@ -1,6 +1,4 @@
-// const Player = require("./Player");
-// const AI = require("./AI");
-// const Human = require("./Human");
+const prompt = require('prompt');
 
 
 
@@ -12,16 +10,17 @@ class Game {
     }
 
     runGame(){
-        this.gesture = prompt("Enter a choice: 0 = Rock, 1 = Paper, 2 = Scissors, 3 = Lizard, 4 = Spock");
+        prompt.get("Enter a choice: 0 = Rock, 1 = Paper, 2 = Scissors, 3 = Lizard, 4 = Spock");
+        console.log(`You chose ${this.gesture}`);
         this.possibleGesture = ['Rock', 'Paper', 'Scissors', 'Lizard', 'Spock'];
-        this,this.aiGesture = "";
+        this.aiGesture = "";
 
         if(this.gesture === this.aiGesture){
-            console.log(`Both players selected ${this.possibleGesture}! It's a tie!`)
+            console.log(`Both players selected ${this.gesture}! It's a tie!`)
         }
         else if(this.gesture == 'rock'){
             if(this.aiGesture == 'scissors' || 'lizard'){
-                console.log(`${this.possibleGesture} crushes Scissors! You win!` || `${this.possibleGesture} cruhses Lizard! You Win!`)
+                console.log(`${this.gesture} crushes Scissors! You win!` || `${this.gesture} cruhses Lizard! You Win!`)
   
             }else(this.aiGesture == 'paper' || 'spock')
                 console.log("Paper covers Rock! You Lose!" || "Spock vaporizes Rock! You Lose!")
@@ -29,7 +28,7 @@ class Game {
 
         else if(this.gesture == 'paper'){
             if(this.aiGesture == 'rock' || 'spock'){
-                 console.log(`${this.possibleGesture} covers Rock! You win!` || `${this.possibleGesture} disproves Spock! You Win!`)
+                 console.log(`${this.gesture} covers Rock! You win!` || `${this.gesture} disproves Spock! You Win!`)
       
             }else(this.aiGesture == 'scissors' || 'lizard')
                  console.log("Scissors cuts Paper! You Lose!" || "Lizard eats Paper! You Lose!")

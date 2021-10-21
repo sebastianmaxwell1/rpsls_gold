@@ -5,9 +5,6 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "Game.js",
-    "start": "Player.js",
-    "start": "AI.js",
     "start": "Human.js"
   },
   "repository": {
@@ -22,6 +19,7 @@
   },
   "homepage": "https://github.com/sebastianmaxwell1/rpsls_gold#readme",
   "dependencies": {
+    "prompt": "^1.2.0",
     "prompt-sync": "^4.2.0"
   }
 }
