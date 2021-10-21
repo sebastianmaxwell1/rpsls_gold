@@ -19,45 +19,45 @@ class Game {
         this.choices.push(new this.choice("spock"));
     }
 
-    runGame(player1Choice, computerMove, playerOne){
-        let winner = "";
-        if (player1Choice === computerMove.AI) {
-            winner = "no one";
-        } else if (player1Choice === 'rock') {
-            if (computerMove.AI === ['paper' || 'spock']) {
-                winner = "computer"
-            } else {
-                winner = `${playerOne}`;
-            }
-        } else if (player1Choice === 'paper') {
-            if (computerMove.AI === ['scissors' || 'lizard']) {
-                winner = "computer"
-            } else {
-                winner = `${playerOne}`;
-            }
-        } else if (player1Choice === 'scissors') {
-            if (computerMove.AI === ['rock' || 'spock']) {
-                winner = "computer"
-            } else {
-                winner = `${playerOne}`;
-            }
-        }  else if (player1Choice === 'lizard') {
-            if (computerMove.AI === ['rock' || 'scissors']) {
-                winner = "computer"
-            } else {
-                winner = `${playerOne}`;
-            }
-        } else if (player1Choice === 'spock') {
-            if (computerMove.AI === ['paper' || 'lizard']) {
-                winner = "computer"
-            } else {
-                winner = `${playerOne}`;
-            }
-        } else {
-            console.log("Something went wrong. Please try again.");
-            process.exit();
-        }
-    }
+    // runGame(player1Choice, computerMove, playerOne){
+    //     let winner = "";
+    //     if (player1Choice === computerMove.AI) {
+    //         winner = "no one";
+    //     } else if (player1Choice === 'rock') {
+    //         if (computerMove.AI === ['paper' || 'spock']) {
+    //             winner = "computer"
+    //         } else {
+    //             winner = `${playerOne}`;
+    //         }
+    //     } else if (player1Choice === 'paper') {
+    //         if (computerMove.AI === ['scissors' || 'lizard']) {
+    //             winner = "computer"
+    //         } else {
+    //             winner = `${playerOne}`;
+    //         }
+    //     } else if (player1Choice === 'scissors') {
+    //         if (computerMove.AI === ['rock' || 'spock']) {
+    //             winner = "computer"
+    //         } else {
+    //             winner = `${playerOne}`;
+    //         }
+    //     }  else if (player1Choice === 'lizard') {
+    //         if (computerMove.AI === ['rock' || 'scissors']) {
+    //             winner = "computer"
+    //         } else {
+    //             winner = `${playerOne}`;
+    //         }
+    //     } else if (player1Choice === 'spock') {
+    //         if (computerMove.AI === ['paper' || 'lizard']) {
+    //             winner = "computer"
+    //         } else {
+    //             winner = `${playerOne}`;
+    //         }
+    //     } else {
+    //         console.log("Something went wrong. Please try again.");
+    //         process.exit();
+    //     }
+    // }
     
 
 }
