@@ -1,28 +1,52 @@
 
-
 class Player {
     constructor(name) {
+    
         this.score = 0;
         this.name = name;
+        this.gesture = "";
+        this.gestureList = ['Rock', 'Paper', 'Scissors', 'lizard', 'spock'];
+
+        
     }
 
-    playerChoice(choice){
-        let playerResult = choice.generateChoice();
-        return choiceResult;
-    }
+   gestureSelector() {
 
-    allChoices(choiceArray) {
-        let choiceTotal = 0;
-
-        for(let i = 0; i < choiceArray.length; i++) {
-            let result = this.playerChoice(choiceArray[i]);
-            choiceTotal += result;
-        }
-
-        return choiceTotal;
-    }
-
-
+   }
 }
 
 module.exports = Player
+
+
+
+
+
+
+
+
+// class Player {
+//     constructor(name) {
+//         this.score = 0;
+//         this.name = name;
+//     }
+
+//     playerChoice(choice){
+//         let playerResult = choice.generateChoice();
+//         return choiceResult;
+//     }
+
+//     allChoices(choiceArray) {
+//         let choiceTotal = 0;
+
+//         for(let i = 0; i < choiceArray.length; i++) {
+//             let result = this.playerChoice(choiceArray[i]);
+//             choiceTotal += result;
+//         }
+
+//         return choiceTotal;
+//     }
+
+
+// }
+
+// module.exports = Player
