@@ -1,7 +1,4 @@
 
-
-
-
 class Gestures {
     constructor(){
         this.humanPlayer = "";

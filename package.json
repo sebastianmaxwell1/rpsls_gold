@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "Human.js"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -19,7 +19,6 @@
   },
   "homepage": "https://github.com/sebastianmaxwell1/rpsls_gold#readme",
   "dependencies": {
-    "prompt": "^1.2.0",
     "prompt-sync": "^4.2.0"
   }
 }

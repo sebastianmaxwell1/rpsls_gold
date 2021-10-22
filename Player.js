@@ -13,6 +13,17 @@ class Player {
    gestureSelector() {
 
    }
+
+   gesturesMade(gestureArray) {
+    let runningTotal = 0;
+
+    for(let i = 0; i < gestureArray.length; i++) {
+      let result = this.gestureSelector(gestureArray[i]);
+      runningTotal += result;
+    }
+
+    return runningTotal;
+  }
 }
 
 module.exports = Player
